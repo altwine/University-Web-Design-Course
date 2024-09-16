@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BestPizza - лучшая пиццерия в Новочеркасске.</title>
+    <title>BestPizza - лучшая пиццерия в Новочеркасске</title>
     <meta name="description" content="Готовим и доставляем лучшую пиццу Новочеркасска!">
     <meta property="og:url" content="https://altwine.github.io/University-Web-Design-Course/">
     <meta property="og:type" content="website">
@@ -33,6 +33,10 @@
             padding: 0;
             box-sizing: border-box;
         }
+        html {
+            scroll-behavior: smooth;
+            -webkit-tap-highlight-color: transparent;
+        }
         html, body {
             width: 100%;
             height: 100%;
@@ -49,6 +53,7 @@
             font-size: 20px;
         }
         header {
+            user-select: none;
             height: 280px;
             align-items: center;
             flex-direction: column;
@@ -79,6 +84,9 @@
             flex-direction: column;
             flex: 1;
             margin: 20px;
+        }
+        img {
+            user-select: none;
         }
         .icons-container {
            align-self: end;
@@ -171,6 +179,11 @@
         </div>
     </section>
     <section>
+        <div class="image">
+            <img height="325px" src="h-pizza-slices2.jpg" />
+        </div>
+    </section>
+    <section>
         <div class="text">
             <h1>разнообразие меню</h1>
             <p>Мы предлагаем широкий ассортимент пицц, чтобы удовлетворить вкусы всех наших клиентов. В нашем меню вы найдете как классические варианты, такие как Маргарита и Пепперони, так и авторские рецепты, которые удивят даже самых искушенных гурманов. Мы также предлагаем вегетарианские и безглютеновые опции, чтобы каждый мог найти что-то по своему вкусу.</p>
@@ -190,9 +203,21 @@
         </div>
     </section>
     <section>
+        <div class="image">
+            <img height="325px" src="h-pizza-slices1.jpg" />
+        </div>
+    </section>
+    <section>
         <div class="text">
             <h1>комфортная обстановка</h1>
             <p>У нас создана уютная и теплая обстановка, где вы можете чувствовать себя комфортно. Мы предлагаем обеденную зону, бар и террасу для отдыха и общения.</p>
+        </div>
+    </section>
+    <section>
+        <div class="image">
+            <img height="325px" src="v-pizza-eating-second.jpg" />
+            <img height="325px" src="v-pizza-view-second.jpg" />
+            <img height="325px" src="v-pizza-view-third.jpg" />
         </div>
     </section>
     <section>
