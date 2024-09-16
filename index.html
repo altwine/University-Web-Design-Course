@@ -103,13 +103,17 @@
             display: flex;
             align-items: center;
         }
-        .text {
+        .text, .image {
             max-width: 1024px;
         }
         .image {
             display: flex;
             flex-direction: row;
             justify-content: center;
+        }
+        .image > * {
+            margin-left: 20px;
+            margin-right: 20px;
         }
         .cookies-container {
             bottom: 0;
@@ -174,13 +178,9 @@
     </section>
     <section>
         <div class="image">
-            <img height="300px" src="v-pizza-baking.jpg" />
-        </div>
-        <div class="image">
-            <img height="300px" src="v-pizza-view.jpg" />
-        </div>
-        <div class="image">
-            <img height="300px" src="v-pizza-eating.jpg" />
+            <img height="325px" src="v-pizza-baking.jpg" />
+            <img height="325px" src="v-pizza-view.jpg" />
+            <img height="325px" src="v-pizza-eating.jpg" />
         </div>
     </section>
     <section>
