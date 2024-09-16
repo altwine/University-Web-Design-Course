@@ -39,12 +39,7 @@
         }
         body {
             font-family: "TT Norms Pro";
-            dipslay: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        body > * {
-            flex: 1;
+
         }
         h1, h2 {
             font-size: 30px;
@@ -64,7 +59,8 @@
         } 
         header, section, footer {
             width: 100%;
-            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
             padding: 20px;
             display: flex;
             background-color: #;
@@ -103,6 +99,9 @@
         .centered {
             display: flex;
             align-items: center;
+        }
+        .text {
+            max-width: 1024px;
         }
         .cookies-container {
             bottom: 0;
@@ -171,21 +170,26 @@
             <p>Мы понимаем, что время — это ценный ресурс, поэтому в <span class="brand-name">BestPizza</span> мы сделали процесс заказа максимально удобным. Вы можете заказать пиццу через наш сайт или мобильное приложение всего за несколько кликов. Также мы предлагаем доставку на дом, что позволяет вам наслаждаться любимым блюдом, не выходя из дома.</p>
         </div>
     </section>
-    <section>skkrjf</section>
-    <section>psld</section>
-    <section>osks</section>
-    <section>sjywy</section>
+    <section>
+        <div class="text">
+            <h1>комфортная обстановка</h1>
+            <p>У нас создана уютная и теплая обстановка, где вы можете чувствовать себя комфортно. Мы предлагаем обеденную зону, бар и террасу для отдыха и общения.</p>
+        </div>
+    </section>
+    <section>
+        <div class="text">
+            <h1>сохраните момент</h1>
+            <p>У нас наша цель - создать моменты, которые вы будете помнить на долгие годы. Мы предлагаем вам возможность сохранить воспоминания о вашем посещении нами, заказав фото или видеоурок для своих социальных сетей.</p>
+        </div>
+    </section>
+    
     
     <footer>
-        <div class="text inverted centered">
+        <div class="inverted centered">
            <p>© BestPizza 2024<br>Адрес компании: Новочеркасск, 11 общага при НПИ</p>
         </div>
         <div style="flex: 1"></div>
         <div class="icons-container inverted centered">
-            <!--
-                С телефона тяжело с SVG картинками
-                работать. Сделал костылями.
-            -->
             <svg id="social" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" xml:space="preserve"><g style="stroke:none;stroke-width:0;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:none;fill-rule:nonzero;opacity:1"><path style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#000;fill-rule:nonzero;opacity:1" d="m24.89 23.01 32.9 43.98h7.45l-32.9-43.98z" transform="translate(1.407 1.407)scale(2.81)"/><path d="M72.349 0H17.651C7.902 0 0 7.902 0 17.651V72.35C0 82.098 7.902 90 17.651 90H72.35C82.098 90 90 82.098 90 72.349V17.651C90 7.902 82.098 0 72.349 0M56.032 70.504 41.054 50.477 22.516 70.504h-4.765L38.925 47.63 17.884 19.496h16.217L47.895 37.94l17.072-18.444h4.765L50.024 40.788l22.225 29.716z" style="stroke:none;stroke-width:1;stroke-dasharray:none;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;fill:#000;fill-rule:nonzero;opacity:1" transform="translate(1.407 1.407)scale(2.81)"/></g></svg>
             <svg id="social" style="transform:scale(1.30)" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><path d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 12.890625 17 L 15.529297 17 C 16.189297 17 16.449219 17.290312 16.699219 18.070312 C 17.879219 22.000312 19.629531 25 20.519531 25 C 20.849531 25 21 24.840938 21 23.960938 L 21 20.339844 C 20.9 18.469844 20 18.310625 20 17.640625 C 20 17.320625 20.209141 17 20.619141 17 L 25.269531 17 C 25.829531 17 26 17.319766 26 18.009766 L 26 23.199219 C 26 23.789219 26.449141 24 26.619141 24 C 26.949141 24 27.259141 24.020859 27.869141 23.380859 C 29.749141 21.160859 31.390625 17.800781 31.390625 17.800781 C 31.560625 17.400781 31.869297 17 32.529297 17 L 35.150391 17 C 35.740391 17 35.98 17.259141 36 17.619141 C 36.01 17.749141 35.979453 17.889062 35.939453 18.039062 C 35.609453 19.629062 32.25 24.350625 32.25 24.390625 C 32.1 24.640625 32.01 24.82 32 25 C 31.99 25.18 32.06 25.359141 32.25 25.619141 C 32.53 26.019141 33.13 26.76 33.75 27.5 C 34.86 28.84 35.749453 30.250078 35.939453 30.830078 C 35.989453 30.980078 36 31.12 36 31.25 C 35.99 31.75 35.639297 32 35.029297 32 L 32.410156 32 C 31.420156 32 31.100859 31.02 29.380859 29 C 27.880859 27.25 27.100703 27 26.720703 27 C 26.180703 27 26 27.129688 26 27.929688 L 26 30.910156 C 26 31.570156 25.830391 32 24.150391 32 C 21.380391 32 18.250859 30.120859 15.880859 26.880859 C 12.600859 22.390859 12 18.499531 12 17.769531 C 12 17.369531 12.130625 17 12.890625 17 z"></path></svg>
             <svg id="social" style="transform:scale(1.17)" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 50 50"><path d="M41 4H9C6.24 4 4 6.24 4 9v32c0 2.76 2.24 5 5 5h32c2.76 0 5-2.24 5-5V9c0-2.76-2.24-5-5-5m-4 15h-2c-2.14 0-3 .5-3 2v3h5l-1 5h-4v15h-5V29h-4v-5h4v-3c0-4 2-7 6-7 2.9 0 4 1 4 1z"/></svg>
@@ -198,9 +202,6 @@
     </div>
     
     <button id="scroll-to-top"><?xml version="1.0" encoding="iso-8859-1"?><svg fill="#000000" height="48px" width="48px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><path id="XMLID_21_" d="M213.107,41.894l-37.5-37.5c-5.857-5.858-15.355-5.858-21.213,0l-37.5,37.5 	c-4.29,4.29-5.573,10.742-3.252,16.347c2.322,5.605,7.792,9.26,13.858,9.26H150V315c0,8.284,6.716,15,15,15c8.284,0,15-6.716,15-15 V67.5h22.5c6.067,0,11.537-3.655,13.858-9.26C218.68,52.635,217.397,46.184,213.107,41.894z"/></svg></button>
-   
-   <div style="background-color:red">udjd</div>
-   
    
     <script> 
         // Получаю необходимые элементы
